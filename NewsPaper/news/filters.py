@@ -15,7 +15,7 @@ class PostFilter(FilterSet):
         }))
     
     creationData = filters.CharFilter(
-        label='Creation Date', 
+        label='Created later than', 
         lookup_expr='gt',
         widget = forms.TextInput(attrs={
             'placeholder': 'YYYY-MM-DD HH:MM', 
